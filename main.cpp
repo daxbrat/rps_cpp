@@ -2,8 +2,8 @@
 
 int main()
 {
-	string computerSelection{};
-	string playerSelection{};
+	int computerSelection{};
+	int playerSelection{};
 
 	// ------------------------Random number generator
 	random_device rd;
@@ -24,14 +24,18 @@ int main()
 	} */
 	// ------------------------------------------------------------------------------------
 	if (die6(mt) == 1) {
-		computerSelection = "Rock";
+		computerSelection = 1; // 1 = Rock
 	}
 	else if (die6(mt) == 2) {
-			computerSelection = "Paper";
+			computerSelection = 2; // 2 = Paper
 		
 	} else {
-	 computerSelection = "Scissors";
+	 computerSelection = 3; // 3 = Scissors
 	}
-	cout << computerSelection << '\n';
+	// cout << computerSelection << '\n';
+
+	cout << "Type a number - 1=rock, 2=paper or 3=scissors: ";
+	cin >> playerSelection;
+
 	
 }
