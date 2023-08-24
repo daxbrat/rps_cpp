@@ -3,7 +3,7 @@
 int main()
 {
 	string computerSelection{};
-	int playerSelection{};
+	string playerSelection{};
 
 	// ------------------------Random number generator
 	random_device rd;
