@@ -1,11 +1,12 @@
 #include "std_lib_facilities.h"
+
+int computerSelection{};
+int playerSelection{};
 bool x = true;
 
 int main()
 {
 	while (x) {
-		int computerSelection{};
-		int playerSelection{};
 
 		// ------------------------Random number generator
 		random_device rd;
@@ -75,12 +76,9 @@ int main()
 						cout << "Scissors beats Paper - Player Wins!!!\n";
 					}
 					break;
-				case 4: // Quit
-					x = false;
-					break;
 
 				default:
-					cout << "Not a valid choice\m";
+					cout << "Not a valid choice\n";
 				}
 			}
 		}
